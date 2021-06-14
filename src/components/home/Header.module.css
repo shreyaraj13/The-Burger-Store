@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  padding-left: 100px;
+  font-family: "Lato", sans-serif;
+  color: rgb(80, 35, 20);
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+}
+
+header img {
+  max-height: 650px;
+  padding: 0;
+  margin: 0;
+}
+
+.text button {
+  cursor: pointer;
+  background-color: var(--themecolor);
+  border: 3px solid rgb(80, 35, 20);
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  font-size: large;
+  color: rgb(80, 35, 20);
+}
+.text button:hover,
+.text button:active {
+  --themecolor: rgb(116, 62, 51);
+  color: rgb(245, 235, 220);
+}

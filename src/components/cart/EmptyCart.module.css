@@ -1,0 +1,32 @@
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyCart img {
+  height: 500px;
+}
+
+.emptyCart h2 {
+  color: rgba(80, 35, 20, 0.692);
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+}
+
+.emptyCart button {
+  cursor: pointer;
+  background-color: var(--themecolor);
+  border: 3px solid rgb(80, 35, 20);
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  font-size: large;
+  color: rgb(80, 35, 20);
+}
+.emptyCart button:hover,
+.emptyCart button:active {
+  --themecolor: rgb(116, 62, 51);
+  color: rgb(245, 235, 220);
+}

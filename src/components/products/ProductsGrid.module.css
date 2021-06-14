@@ -1,0 +1,5 @@
+.gridContainer {
+  padding: 50px 250px;
+  display: block;
+  grid-template-columns: auto auto auto;
+}

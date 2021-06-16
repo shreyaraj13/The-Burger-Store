@@ -10,6 +10,10 @@ function App() {
   const [cart, setCart] = useState({});
 
   useEffect(() => {
+    window.localStorage.setItem("cart", JSON.stringify(cart));
+    //we need to stringfy because we can store only strings in local storage
+  }, [cart]);
+  useEffect(() => {
     const cart = window.localStorage.getItem("cart");
     setCart(JSON.parse(cart));
     //storing in local state (setCart) after fetching from local storage
@@ -17,10 +21,6 @@ function App() {
     // i.e. data from ProductCart is sent up to context api
   }, []);
 
-  useEffect(() => {
-    window.localStorage.setItem("cart", JSON.stringify(cart));
-    //we need to stringfy because we can store only strings in local storage
-  }, [cart]);
   return (
     <Router>
       <CartContext.Provider value={{ cart, setCart }}>

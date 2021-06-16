@@ -8,9 +8,13 @@
   font-size: 20px;
 }
 
+.card h1 {
+  padding-top: 50px;
+}
 .card img {
   padding-top: 30px;
   max-height: 400px;
+  max-width: 400px;
 }
 
 .cardElement {
@@ -34,6 +38,15 @@
 }
 .card button:hover,
 .card button:active {
-  --themecolor: rgb(116, 62, 51);
+  --themecolor: rgb(26, 168, 38);
   color: rgb(245, 235, 220);
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    width: 100%;
+  }
+  .card img {
+    width: 300px;
+  }
 }

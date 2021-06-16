@@ -2,6 +2,12 @@
   --themecolor: rgb(245, 235, 220);
 }
 
+.navbar {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
 .navbar,
 .navbarlinks {
   display: flex;
@@ -56,4 +62,32 @@
 .cart button img {
   height: 25px;
   background-color: var(--themecolor);
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar a {
+    font-size: 30px;
+    padding: 0px 20px;
+  }
+  .navbar a img {
+    height: 40px;
+  }
+  .navbarlinks {
+    padding-right: 0px;
+    margin-left: 0%;
+  }
+  .navbarlinks a {
+    font-size: 25px;
+    padding-right: 10px;
+  }
+  .cart button {
+    padding: 0.1rem 0.8rem;
+    border-radius: 25px;
+  }
 }

@@ -1,0 +1,99 @@
+.cartpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  padding: 150px 350px;
+  color: rgb(80, 35, 20);
+  font-family: "Lato", sans-serif;
+}
+
+.cartpage p {
+  font-size: 25px;
+}
+.order {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(80, 35, 20);
+  border: 3px solid rgb(80, 35, 20);
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  font-size: large;
+  color: white;
+}
+.cartproduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cartproduct img {
+  height: 100px;
+  width: 100px;
+  padding-right: 50px;
+}
+
+.cartproduct h3 {
+  font-size: 20px;
+  width: 100px;
+  margin-right: 100px;
+}
+
+.cartproduct p {
+  margin-right: 50px;
+}
+.delete {
+  cursor: pointer;
+  background-color: rgb(202, 3, 3);
+  border: 3px solid rgb(161, 41, 1);
+  padding: 0.2rem 1rem;
+  border-radius: 25px;
+  font-size: large;
+  color: rgb(252, 251, 250);
+}
+
+.addsub {
+  cursor: pointer;
+  background-color: var(--themecolor);
+  border: 3px solid rgb(80, 35, 20);
+  padding: 0.2rem 0.8rem;
+  border-radius: 25px;
+  font-size: large;
+  color: rgb(80, 35, 20);
+  margin-right: 50px;
+}
+
+.addsub:hover,
+.addsub:active {
+  background-color: rgb(80, 35, 20);
+  color: white;
+}
+@media screen and (max-width: 450px) {
+  .cartpage {
+    padding: 150px 0px 20px 0px;
+  }
+  .cartproduct img {
+    height: 60px;
+    width: 60px;
+    padding-right: 0px;
+  }
+  .cartproduct h3 {
+    font-size: 15px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  .addsub {
+    padding: 0.1rem 0.5rem;
+    margin-right: 10px;
+  }
+  .cartproduct p {
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .delete {
+    padding: 0.1rem 0.5rem;
+  }
+}

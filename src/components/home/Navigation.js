@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import classes from "./Navigation.module.css";
+import { useContext } from "react";
+import CartContext from "../../cart-context";
 
 const Navigation = () => {
+  const { cart } = useContext(CartContext);
+  const itemQuantity = () => {
+    if (!cart.totalItems) {
+      return 0;
+    } else {
+      return cart.totalItems;
+    }
+  };
   return (
     <nav className={classes.navbar}>
       <Link to="/" className={classes.innerlink}>
@@ -13,7 +23,7 @@ const Navigation = () => {
         <Link to="/products">Products</Link>
         <Link to="/cart" className={classes.cart}>
           <button className={classes.innerlink}>
-            <h3>10</h3>
+            <h3>{itemQuantity()}</h3>
             <img src="/images/cart.ico" alt="cart" />
           </button>
         </Link>

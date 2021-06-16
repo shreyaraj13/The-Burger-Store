@@ -6,9 +6,12 @@
 }
 
 .emptyCart img {
-  height: 500px;
+  height: 450px;
 }
 
+.emptyCart {
+  padding-top: 70px;
+}
 .emptyCart h2 {
   color: rgba(80, 35, 20, 0.692);
   padding: 20px;
@@ -29,4 +32,14 @@
 .emptyCart button:active {
   --themecolor: rgb(116, 62, 51);
   color: rgb(245, 235, 220);
+}
+
+@media screen and (max-width: 450px) {
+  .emptyCart {
+    padding-top: 150px;
+  }
+  .emptyCart img {
+    width: 100%;
+    height: 200px;
+  }
 }

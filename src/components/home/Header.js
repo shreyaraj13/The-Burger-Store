@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <div className={classes.text}>
-        <p>Hungry?</p>
+        <p>🍔Hungry?</p>
         <h1>Grab your meal!</h1>
         <Link to="/products">
           <button>Order Now</button>
